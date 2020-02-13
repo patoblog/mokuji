@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/mokuji.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/mokuji.min.js"></script>
+	<title>mokuji</title>
+</head>
+<body>
+	<h1>mokuji</h1>
+	<script type="text/javascript">
+		$(function(){
+			$('.mokuji').mokuji(
+				{
+					contentspace: '.singlepage',
+					titletag: 'h2,h3,h4',
+					dot           : false,
+					decimal       : true
+				}
+			);
+		});
+	</script>
+	<div class="mokuji"></div>
+	<div class="singlepage">
+		<h2>aaaaa</h2>
+		<h2>bbbbb</h2>
+		<h3>ccccc</h3>
+		<h3>ddddd</h3>
+		<h2>eeeee</h2>
+		<h3>fffff</h3>
+		<h4>ggggg</h4>
+		<h4>hhhhh</h4>
+	</div>
+</body>
+</html>
