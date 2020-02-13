@@ -1,0 +1,46 @@
+.mokujibox{
+	border: 1px solid #0074bf;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.mokujibox p{
+	font-weight: bold;
+	font-size: 120%;
+	margin-bottom: 10px;
+}
+
+.mokujibox ul{
+	margin: 0;
+	padding-left: 20px;
+}
+
+.dot-none{
+	list-style: none;
+}
+
+.indent-1{
+	padding-left: 0;
+}
+
+.indent-2{
+	padding-left: 10px;
+}
+
+.indent-3{
+	padding-left: 20px;
+}
+
+.indent-4{
+	padding-left: 30px;
+}
+
+.indent-5{
+	padding-left: 40px;
+}
+
+.indent-6{
+	padding-left: 50px;
+}
