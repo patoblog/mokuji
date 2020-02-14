@@ -66,9 +66,7 @@ $('.mokuji').mokuji(
  
 # Author
  
-作成情報を列挙する
- 
-* patoblog
+patoblog
  
 # License
 free
