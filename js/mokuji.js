@@ -38,11 +38,20 @@
 			$(tags).each(function(){
 				switch ($(this).get(0).tagName) {
 					case "H1":
+						h2count = 1;
+						h3count = 1;
+						h4count = 1;
+						h5count = 1;
+						h6count = 1;
 						$(".mokujibox").find("li").eq(koumokucount).children("a").prepend(h1count + ".");
 						koumokucount++;
 						h1count++;
 					break;
 					case "H2":
+						h3count = 1;
+						h4count = 1;
+						h5count = 1;
+						h6count = 1;
 						$(".mokujibox").find("li").eq(koumokucount).children("a").prepend(h2count + ".");
 						if (h1count > 1) {
 							$(".mokujibox").find("li").eq(koumokucount).children("a").prepend((h1count - 1) + "-");
@@ -51,6 +60,9 @@
 						h2count++;
 					break;
 					case "H3":
+						h4count = 1;
+						h5count = 1;
+						h6count = 1;
 						$(".mokujibox").find("li").eq(koumokucount).children("a").prepend(h3count + ".");
 						if (h1count > 1) {
 							$(".mokujibox").find("li").eq(koumokucount).children("a").prepend((h1count - 1) + "-" + (h2count - 1) + "-");
@@ -63,6 +75,8 @@
 						h3count++;
 					break;
 					case "H4":
+						h5count = 1;
+						h6count = 1;
 							$(".mokujibox").find("li").eq(koumokucount).children("a").prepend(h4count + ".");
 						if (h1count > 1) {
 							$(".mokujibox").find("li").eq(koumokucount).children("a").prepend((h1count - 1) + "-" + (h2count - 1) + "-" + (h3count - 1) + "-");
@@ -79,6 +93,7 @@
 						h4count++;
 					break;
 					case "H5":
+						h6count = 1;
 						$(".mokujibox").find("li").eq(koumokucount).children("a").prepend(h5count + ".");
 						if (h1count > 1) {
 							$(".mokujibox").find("li").eq(koumokucount).children("a").prepend((h1count - 1) + "-" + (h2count - 1) + "-" + (h3count - 1) + "-" +(h4count - 1) + "-");
